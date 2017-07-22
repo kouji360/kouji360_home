@@ -1,0 +1,45 @@
+
+tbody tr.selectable:hover td {
+    background: #ecf2fa;
+    cursor: pointer;
+}
+.nav-tabs {
+    cursor : pointer;
+}
+
+.chara-tag {
+    overflow: hidden;
+    position: relative;
+    cursor : pointer;
+    width: 100px;
+    display: inline;
+}
+.chara-tag img {
+    position: absolute;
+    left: -10%;
+    margin-top:1px;
+    width: 21px;
+    height:21px;
+    filter:none;
+}
+.chara-tag .unselect {
+    filter: grayscale(1);
+}
+.chara-tag span {
+    position: relative;
+    left: 16px;
+}
+.label-brown {
+    background-color: saddlebrown;
+}
+.label-holy {
+    background-color: #ffd90e;
+}
+.td .label{
+    font-size: 12px;
+}
+.total{
+    float: right;
+    margin-bottom: 4px;
+    margin-right: 16px;
+}

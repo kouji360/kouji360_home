@@ -4,128 +4,132 @@
     <meta charset="utf-8">
     <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/static/css/index.css" rel="stylesheet">
     <script
             src="https://code.jquery.com/jquery-3.2.1.js"
             integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
             crossorigin="anonymous"></script>
-
-    <style type="text/css">
-        tbody tr.selectable:hover td {
-            background: #ecf2fa;
-            cursor: pointer;
-        }
-
-    </style>
+    <script src='vendor/vendor.js'></script>
 </head>
 <body>
 <div class="container">
-    <H1>グラブル救援ID</H1>
-    <div id="main_table">
-        <table class="table table-striped">
-            <tr>
-                <td>
-                    <label>Lv100 プロトバハムート</label>
-                    <table class="table table-striped" id="baha_tbl"><tbody><tr></tr></tbody></table>
-                </td>
-                <td>
-                    <label>Lv100 ジ・オーダー・グランデ</label>
-                    <table class="table table-striped" id="gra_tbl"><tbody><tr></tr></tbody></table>
-                </td>
-                <td>
-                    <label>Lv60 リヴァイアサン・マグナ</label>
-                    <table class="table table-striped" id="riva_tbl"><tbody><tr></tr></tbody></table>
-                </td>
-                <td>
-                    <label>Lv70 コロッサス・マグナ</label>
-                    <table class="table table-striped" id="coro_tbl"><tbody><tr></tr></tbody></table>
-                </td>
-                <td>
-                    <label>Lv75 セレスト・マグナ</label>
-                    <table class="table table-striped" id="sere_tbl"><tbody><tr></tr></tbody></table>
-                </td>
-                <td>
-                    <label>Lv75 シュヴァリエ・マグナ</label>
-                    <table class="table table-striped" id="shuva_tbl"><tbody><tr></tr></tbody></table>
-                </td>
-                <td>
-                    <label>Lv60 ユグドラシル・マグナ</label>
-                    <table class="table table-striped" id="yugu_tbl"><tbody><tr></tr></tbody></table>
-                </td>
-                <td>
-                    <label>Lv50 ティアマト・マグナ</label>
-                    <table class="table table-striped" id="tia_tbl"><tbody><tr></tr></tbody></table>
-                </td>
-            </tr>
-        </table>
-
+    <h2>グラブル救援ID</h2>
+    <div class="tagcontainer total">
+        <div class="tagcontair first">
+            <div class="chara-tag grande" id="grand-tag">
+                <img src="vendor/static/img/01_grande.png">
+                <span class="label label-holy">グランデ</span>
+            </div>
+            <div class="chara-tag baha" id="baha-tag" style="margin-left: 25px;">
+                <img src="vendor/static/img/02_baha.png">
+                <span class="label label-info">プロバハ</span>
+            </div>
+            <div class="chara-tag riva" id="riva-tag" style="margin-left: 25px;">
+                <img src="vendor/static/img/03_riva.png">
+                <span class="label label-primary">リヴァイ</span>
+            </div>
+            <div class="chara-tag coro" id="coro-tag" style="margin-left: 25px;">
+                <img src="vendor/static/img/04_coro.png">
+                <span class="label label-danger">コロサス</span>
+            </div>
+        </div>
+        <div class="tagcontair second">
+            <div class="chara-tag yugu" id="yugu-tag">
+                <img src="vendor/static/img/05_yugu.png">
+                <span class="label label-brown">ゆぐゆぐ</span>
+            </div>
+            <div class="chara-tag shuva" id="shuva-tag" style="margin-left: 25px;">
+                <img src="vendor/static/img/06_shuva.png">
+                <span class="label label-holy">シュバリ</span>
+            </div>
+            <div class="chara-tag sere" id="sere-tag" style="margin-left: 25px;">
+                <img src="vendor/static/img/07_sere.png">
+                <span class="label label-info">セレスト</span>
+            </div>
+            <div class="chara-tag tia" id="tia-tag" style="margin-left: 25px;">
+                <img src="vendor/static/img/08_tia.png">
+                <span class="label label-success">ティアマ</span>
+            </div>
+        </div>
     </div>
-    <div>
-        <button id="testbutton" class="hide">
-            test
-        </button>
+    <ul class="nav nav-tabs" id="navtabs">
+        <li class="active" id="all_tab"><a data-toggle="tab">すべて</a></li>
+        <li id="lv100_tab"><a data-toggle="tab">Lv100勢</a></li>
+        <li id="magna_tab"><a data-toggle="tab">マグナ</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active">
+            <table class="table table-striped">
+                <tr>
+                    <td id="baha_body" class="baha">
+                        <label>Lv100 プロトバハムート</label>
+                        <table class="table table-striped" id="baha_tbl">
+                            <tbody>
+                            <tr></tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td id="gra_body" class="grande">
+                        <label>Lv100 ジ・オーダー・グランデ</label>
+                        <table class="table table-striped" id="gra_tbl">
+                            <tbody>
+                            <tr></tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td id="riva_body" class="riva">
+                        <label>Lv60 リヴァイアサン・マグナ</label>
+                        <table class="table table-striped" id="riva_tbl">
+                            <tbody>
+                            <tr></tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td id="coro_body" class="coro">
+                        <label>Lv70 コロッサス・マグナ</label>
+                        <table class="table table-striped" id="coro_tbl">
+                            <tbody>
+                            <tr></tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td id="sere_body" class="sere">
+                        <label>Lv75 セレスト・マグナ</label>
+                        <table class="table table-striped" id="sere_tbl">
+                            <tbody>
+                            <tr></tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td id="shuva_body" class="shuva">
+                        <label>Lv75 シュヴァリエ・マグナ</label>
+                        <table class="table table-striped" id="shuva_tbl">
+                            <tbody>
+                            <tr></tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td id="yugu_body" class="yugu">
+                        <label>Lv60 ユグドラシル・マグナ</label>
+                        <table class="table table-striped" id="yugu_tbl">
+                            <tbody>
+                            <tr></tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td id="tia_body" class="tia">
+                        <label>Lv50 ティアマト・マグナ</label>
+                        <table class="table table-striped" id="tia_tbl">
+                            <tbody>
+                            <tr></tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 </div>
-
-<script src='vendor/vendor.js'></script>
-<script>
-    var tweet;
-    var tweets = [];
-    var wsUri = "ws://ec2-52-40-135-194.us-west-2.compute.amazonaws.com:1880/ws/twitter";
-    var ws = new WebSocket(wsUri);
-    console.log("aaaa");
-    ws.onmessage = function (evt) {
-        console.log("ubbbb");
-        tweet = JSON.parse(evt.data);
-            var id = tweet.id;
-            var target = tweet.target;
-            switch (target){
-                case "Lv100 プロトバハムート":
-                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
-                    $('#baha_tbl tbody > tr:last').after(rec);
-                    break;
-                case "Lv100 ジ・オーダー・グランデ":
-                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
-                    $('#gra_tbl tbody > tr:last').after(rec);
-                    break;
-                case "Lv60 リヴァイアサン・マグナ":
-                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
-                    $('#riva_tbl tbody > tr:last').after(rec);
-                    break;
-                case "Lv70 コロッサス・マグナ":
-                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
-                    $('#coro_tbl tbody > tr:last').after(rec);
-                    break;
-                case "Lv75 セレスト・マグナ":
-                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
-                    $('#sere_tbl tbody > tr:last').after(rec);
-                    break;
-                case "Lv75 シュヴァリエ・マグナ":
-                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
-                    $('#shuva_tbl tbody > tr:last').after(rec);
-                    break;
-                case "Lv60 ユグドラシル・マグナ":
-                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
-                    $('#yugu_tbl tbody > tr:last').after(rec);
-                    break;
-                case "Lv50 ティアマト・マグナ":
-                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
-                    $('#tia_tbl tbody > tr:last').after(rec);
-                    break;
-            }
-    };
-    $("tr > td").on("click",function() {
-        document.execCommand('copy');
-    });
-</script>
-<script>
-    window.onload = function(){
-        var id = '1111111';
-        $("#testbutton").on("click",function(){
-            console.log("click_bt");
-            var rec = '<tr><td>' + id + '</td></tr>>';
-            $('#baha_tbl tbody > tr:last').after(rec);
-        });
-    }
-</script>
+<script type="text/javascript" src="vendor/static/js/index.js"></script>
 </body>
 </html>
