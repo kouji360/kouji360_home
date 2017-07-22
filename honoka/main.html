@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        tbody tr.selectable:hover td {
+            background: #ecf2fa;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <H1>グラブル救援ID</H1>
+    <div id="main_table">
+        <table class="table table-striped">
+            <tr>
+                <td>
+                    <label>Lv100 プロトバハムート</label>
+                    <table class="table table-striped" id="baha_tbl"><tbody><tr></tr></tbody></table>
+                </td>
+                <td>
+                    <label>Lv100 ジ・オーダー・グランデ</label>
+                    <table class="table table-striped" id="gra_tbl"><tbody><tr></tr></tbody></table>
+                </td>
+                <td>
+                    <label>Lv60 リヴァイアサン・マグナ</label>
+                    <table class="table table-striped" id="riva_tbl"><tbody><tr></tr></tbody></table>
+                </td>
+                <td>
+                    <label>Lv70 コロッサス・マグナ</label>
+                    <table class="table table-striped" id="coro_tbl"><tbody><tr></tr></tbody></table>
+                </td>
+                <td>
+                    <label>Lv75 セレスト・マグナ</label>
+                    <table class="table table-striped" id="sere_tbl"><tbody><tr></tr></tbody></table>
+                </td>
+                <td>
+                    <label>Lv75 シュヴァリエ・マグナ</label>
+                    <table class="table table-striped" id="shuva_tbl"><tbody><tr></tr></tbody></table>
+                </td>
+                <td>
+                    <label>Lv50 ティアマト・マグナ</label>
+                    <table class="table table-striped" id="tia_tbl"><tbody><tr></tr></tbody></table>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div>
+        <button id="testbutton" class="hide">
+            test
+        </button>
+    </div>
+</div>
+
+<script src='vendor/vendor.js'></script>
+<script>
+    var tweet;
+    var tweets = [];
+    var wsUri = "ws://ec2-52-40-135-194.us-west-2.compute.amazonaws.com:1880/ws/twitter";
+    var ws = new WebSocket(wsUri);
+    console.log("aaaa");
+    ws.onmessage = function (evt) {
+        console.log("ubbbb");
+        tweet = JSON.parse(evt.data);
+            var id = tweet.id;
+            var target = tweet.target;
+            switch (target){
+                case "Lv100 プロトバハムート":
+                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+                    $('#gra_tbl tbody > tr:last').after(rec);
+                    break;
+                case "Lv100 ジ・オーダー・グランデ":
+                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+                    $('#gra_tbl tbody > tr:last').after(rec);
+                    break;
+                case "Lv60 リヴァイアサン・マグナ":
+                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+                    $('#riva_tbl tbody > tr:last').after(rec);
+                    break;
+                case "Lv70 コロッサス・マグナ":
+                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+                    $('#coro_tbl tbody > tr:last').after(rec);
+                    break;
+                case "Lv75 セレスト・マグナ":
+                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+                    $('#sere_tbl tbody > tr:last').after(rec);
+                    break;
+                case "Lv75 シュヴァリエ・マグナ":
+                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+                    $('#shuva_tbl tbody > tr:last').after(rec);
+                    break;
+                case "Lv50 ティアマト・マグナ":
+                    var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+                    $('#tia_tbl tbody > tr:last').after(rec);
+                    break;
+            }
+    };
+    $("tr > td").on("click",function() {
+        document.execCommand('copy');
+    });
+</script>
+<script>
+    window.onload = function(){
+        var id = '1111111';
+        $("#testbutton").on("click",function(){
+            console.log("click_bt");
+            var rec = '<tr><td>' + id + '</td></tr>>';
+            $('#baha_tbl tbody > tr:last').after(rec);
+        });
+    }
+</script>
+</body>
+</html>
