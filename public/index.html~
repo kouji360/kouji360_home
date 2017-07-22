@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <H1>グラブル救援ID</H1>
+      <div id="twitter"> </div>
+    </div>
+
+    <script src='vendor/vendor.js'></script>
+    <script>
+      var tweet;
+      var tweets = [];
+      var wsUri = "ws://localhost:8888/ws/twitter";
+      var ws = new WebSocket(wsUri);
+      console.log("aaaa");
+      ws.onmessage = function(evt) {
+console.log("ubbbb");
+      tweet = JSON.parse(evt.data);
+      tweets.unshift({text: tweet.text, profile_image: tweet.user.profile_image_url, name: tweet.user.name});
+
+      var tbl = '<table class="table table-striped">';
+	for (var i in tweets) {
+	tbl = tbl + '<tr>';
+	  tbl = tbl + '<td>' + tweets[i].name + ' <img src=' + tweets[i].profile_image + '>' + '</td>';
+	  tbl = tbl + '<td>' + tweets[i].text + '</td>';
+	  tbl = tbl + '</tr>';
+	}
+	tbl = tbl + '</table>';
+      document.getElementById("twitter").innerHTML = tbl;
+      };
+          </script>
+  </body>
+  </html>
