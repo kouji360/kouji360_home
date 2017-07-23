@@ -14,34 +14,42 @@ ws.onmessage = function (evt) {
     switch (target) {
         case "Lv100 プロトバハムート":
             var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.baha-time').text(getDate());
             $('#baha_tbl tbody > tr:last').after(rec);
             break;
         case "Lv100 ジ・オーダー・グランデ":
             var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.gra-time').text(getDate());
             $('#gra_tbl tbody > tr:last').after(rec);
             break;
         case "Lv60 リヴァイアサン・マグナ":
             var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.riva-time').text(getDate());
             $('#riva_tbl tbody > tr:last').after(rec);
             break;
         case "Lv70 コロッサス・マグナ":
             var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.coro-time').text(getDate());
             $('#coro_tbl tbody > tr:last').after(rec);
             break;
         case "Lv75 セレスト・マグナ":
             var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.sere-time').text(getDate());
             $('#sere_tbl tbody > tr:last').after(rec);
             break;
         case "Lv75 シュヴァリエ・マグナ":
             var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.shuva-time').text(getDate());
             $('#shuva_tbl tbody > tr:last').after(rec);
             break;
         case "Lv60 ユグドラシル・マグナ":
             var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.yugu-time').text(getDate());
             $('#yugu_tbl tbody > tr:last').after(rec);
             break;
         case "Lv50 ティアマト・マグナ":
             var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.tia-time').text(getDate());
             $('#tia_tbl tbody > tr:last').after(rec);
             break;
     }
@@ -205,3 +213,10 @@ $(".chara-tag").on("click", function () {
     }
     // $("#grand-tag img").css("filter","grayscale(1)");
 });
+function getDate(){
+    var now = new Date();
+    var h = now.getHours();
+    var mi = now.getMinutes();
+    var s = now.getSeconds();
+    return h + ":" + mi + ":"+ s;
+};

@@ -43,3 +43,16 @@ tbody tr.selectable:hover td {
     margin-bottom: 4px;
     margin-right: 16px;
 }
+.tag-label{
+
+}
+.time{
+    font-size: 14px;
+    font-style: italic;
+}
+.tag-label-container{
+    min-width:120px;
+}
+.tag-label{
+    font-size: 14px;
+}
