@@ -151,10 +151,10 @@ $("#all_tab").on("click", function () {
     $("#baha_body").removeClass("hide");
     $("#gra_body").removeClass("hide");
 
-    $("#rafa_body").removeClass("hide");
-    $("#uri_body").removeClass("hide");
-    $("#gabu_body").removeClass("hide");
-    $("#mika_body").removeClass("hide");
+    $("#rafa_body").addClass("hide");
+    $("#uri_body").addClass("hide");
+    $("#gabu_body").addClass("hide");
+    $("#mika_body").addClass("hide");
 
     $("#riva_body").removeClass("hide");
     $("#coro_body").removeClass("hide");
