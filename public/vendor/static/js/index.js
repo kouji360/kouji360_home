@@ -52,6 +52,26 @@ ws.onmessage = function (evt) {
             $('.tia-time').text(getDate());
             $('#tia_tbl tbody > tr:last').after(rec);
             break;
+        case "Lv100 ラファエル":
+            var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.rafa-time').text(getDate());
+            $('#rafa_tbl tbody > tr:last').after(rec);
+            break;
+        case "Lv100 ウリエル":
+            var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.uri-time').text(getDate());
+            $('#uri_tbl tbody > tr:last').after(rec);
+            break;
+        case "Lv100 ガブリエル":
+            var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.gabu-time').text(getDate());
+            $('#gabu_tbl tbody > tr:last').after(rec);
+            break;
+        case "Lv100 ミカエル":
+            var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.mika-time').text(getDate());
+            $('#mika_tbl tbody > tr:last').after(rec);
+            break;
     }
 };
 /* テーブルデータがクリックされたら、クリップボードにコピーする */
@@ -63,6 +83,13 @@ $("#lv100_tab").on("click", function () {
     console.log("lv100_tab");
     $("#baha_body").removeClass("hide");
     $("#gra_body").removeClass("hide");
+
+    $("#rafa_body").removeClass("hide");
+    $("#uri_body").removeClass("hide");
+    $("#gabu_body").removeClass("hide");
+    $("#mika_body").removeClass("hide");
+
+
     $("#riva_body").addClass("hide");
     $("#coro_body").addClass("hide");
     $("#sere_body").addClass("hide");
@@ -90,6 +117,12 @@ $("#lv100_tab").on("click", function () {
 $("#magna_tab").on("click", function () {
     $("#baha_body").addClass("hide");
     $("#gra_body").addClass("hide");
+
+    $("#rafa_body").addClass("hide");
+    $("#uri_body").addClass("hide");
+    $("#gabu_body").addClass("hide");
+    $("#mika_body").addClass("hide");
+
     $("#riva_body").removeClass("hide");
     $("#coro_body").removeClass("hide");
     $("#sere_body").removeClass("hide");
@@ -117,6 +150,12 @@ $("#magna_tab").on("click", function () {
 $("#all_tab").on("click", function () {
     $("#baha_body").removeClass("hide");
     $("#gra_body").removeClass("hide");
+
+    $("#rafa_body").removeClass("hide");
+    $("#uri_body").removeClass("hide");
+    $("#gabu_body").removeClass("hide");
+    $("#mika_body").removeClass("hide");
+
     $("#riva_body").removeClass("hide");
     $("#coro_body").removeClass("hide");
     $("#sere_body").removeClass("hide");
@@ -140,6 +179,39 @@ $("#all_tab").on("click", function () {
     $("#yugu-tag span").removeClass("unselect");
     $("#tia-tag img").removeClass("unselect");
     $("#tia-tag span").removeClass("unselect");
+});
+$("#ang_tab").on("click", function () {
+    $("#baha_body").addClass("hide");
+    $("#gra_body").addClass("hide");
+
+    $("#rafa_body").removeClass("hide");
+    $("#uri_body").removeClass("hide");
+    $("#gabu_body").removeClass("hide");
+    $("#mika_body").removeClass("hide");
+
+    $("#riva_body").addClass("hide");
+    $("#coro_body").addClass("hide");
+    $("#sere_body").addClass("hide");
+    $("#shuva_body").addClass("hide");
+    $("#yugu_body").addClass("hide");
+    $("#tia_body").addClass("hide");
+
+    $("#grand-tag img").addClass("unselect");
+    $("#grand-tag span").addClass("unselect");
+    $("#baha-tag img").addClass("unselect");
+    $("#baha-tag span").addClass("unselect");
+    $("#riva-tag img").addClass("unselect");
+    $("#riva-tag span").addClass("unselect");
+    $("#coro-tag img").addClass("unselect");
+    $("#coro-tag span").addClass("unselect");
+    $("#sere-tag img").addClass("unselect");
+    $("#sere-tag span").addClass("unselect");
+    $("#shuva-tag img").addClass("unselect");
+    $("#shuva-tag span").addClass("unselect");
+    $("#yugu-tag img").addClass("unselect");
+    $("#yugu-tag span").addClass("unselect");
+    $("#tia-tag img").addClass("unselect");
+    $("#tia-tag span").addClass("unselect");
 });
 // $("#grand-tag").on("click", function () {
 //     if($("#grand-tag img").hasClass('unselect')){
