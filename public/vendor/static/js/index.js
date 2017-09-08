@@ -386,6 +386,233 @@ $("#old_tab").on("click", function () {
 
 
 });
+// $("#old_tab").on("click", function () {
+//     $("#baha_body").addClass("hide");
+//     $("#gra_body").addClass("hide");
+//
+//     $("#rafa_body").addClass("hide");
+//     $("#uri_body").addClass("hide");
+//     $("#gabu_body").addClass("hide");
+//     $("#mika_body").addClass("hide");
+//
+//     $("#riva_body").addClass("hide");
+//     $("#coro_body").addClass("hide");
+//     $("#sere_body").addClass("hide");
+//     $("#shuva_body").addClass("hide");
+//     $("#yugu_body").addClass("hide");
+//     $("#tia_body").addClass("hide");
+//
+//     $("#garu_body").addClass("hide");
+//     $("#ate_body").addClass("hide");
+//     $("#baa_body").addClass("hide");
+//     $("#gura_body").addClass("hide");
+//
+//     $("#hura_body").addClass("hide");
+//     $("#makyu_body").addClass("hide");
+//     $("#medu_body").addClass("hide");
+//     $("#nata_body").addClass("hide");
+//
+//     $("#grand-tag img").addClass("unselect");
+//     $("#grand-tag span").addClass("unselect");
+//     $("#baha-tag img").addClass("unselect");
+//     $("#baha-tag span").addClass("unselect");
+//     $("#riva-tag img").addClass("unselect");
+//     $("#riva-tag span").addClass("unselect");
+//     $("#coro-tag img").addClass("unselect");
+//     $("#coro-tag span").addClass("unselect");
+//     $("#sere-tag img").addClass("unselect");
+//     $("#sere-tag span").addClass("unselect");
+//     $("#shuva-tag img").addClass("unselect");
+//     $("#shuva-tag span").addClass("unselect");
+//     $("#yugu-tag img").addClass("unselect");
+//     $("#yugu-tag span").addClass("unselect");
+//     $("#tia-tag img").addClass("unselect");
+//     $("#tia-tag span").addClass("unselect");
+//
+//
+// });
+$("#kaze_tab").on("click", function () {
+    $("#baha_body").addClass("hide");
+    $("#gra_body").addClass("hide");
+
+    $("#rafa_body").removeClass("hide");
+    $("#uri_body").addClass("hide");
+    $("#gabu_body").addClass("hide");
+    $("#mika_body").addClass("hide");
+
+    $("#riva_body").addClass("hide");
+    $("#coro_body").addClass("hide");
+    $("#sere_body").addClass("hide");
+    $("#shuva_body").addClass("hide");
+    $("#yugu_body").addClass("hide");
+    $("#tia_body").removeClass("hide");
+
+    $("#garu_body").removeClass("hide");
+    $("#ate_body").addClass("hide");
+    $("#baa_body").addClass("hide");
+    $("#gura_body").addClass("hide");
+
+    $("#hura_body").addClass("hide");
+    $("#makyu_body").addClass("hide");
+    $("#medu_body").addClass("hide");
+    $("#nata_body").removeClass("hide");
+
+    $("#grand-tag img").addClass("unselect");
+    $("#grand-tag span").addClass("unselect");
+    $("#baha-tag img").addClass("unselect");
+    $("#baha-tag span").addClass("unselect");
+    $("#riva-tag img").addClass("unselect");
+    $("#riva-tag span").addClass("unselect");
+    $("#coro-tag img").addClass("unselect");
+    $("#coro-tag span").addClass("unselect");
+    $("#sere-tag img").addClass("unselect");
+    $("#sere-tag span").addClass("unselect");
+    $("#shuva-tag img").addClass("unselect");
+    $("#shuva-tag span").addClass("unselect");
+    $("#yugu-tag img").addClass("unselect");
+    $("#yugu-tag span").addClass("unselect");
+    $("#tia-tag img").removeClass("unselect");
+    $("#tia-tag span").removeClass("unselect");
+
+
+});
+$("#hi_tab").on("click", function () {
+    $("#baha_body").addClass("hide");
+    $("#gra_body").addClass("hide");
+
+    $("#rafa_body").addClass("hide");
+    $("#uri_body").addClass("hide");
+    $("#gabu_body").addClass("hide");
+    $("#mika_body").removeClass("hide");
+
+    $("#riva_body").addClass("hide");
+    $("#coro_body").removeClass("hide");
+    $("#sere_body").addClass("hide");
+    $("#shuva_body").addClass("hide");
+    $("#yugu_body").addClass("hide");
+    $("#tia_body").addClass("hide");
+
+    $("#garu_body").addClass("hide");
+    $("#ate_body").removeClass("hide");
+    $("#baa_body").addClass("hide");
+    $("#gura_body").addClass("hide");
+
+    $("#hura_body").removeClass("hide");
+    $("#makyu_body").addClass("hide");
+    $("#medu_body").addClass("hide");
+    $("#nata_body").addClass("hide");
+
+    $("#grand-tag img").addClass("unselect");
+    $("#grand-tag span").addClass("unselect");
+    $("#baha-tag img").addClass("unselect");
+    $("#baha-tag span").addClass("unselect");
+    $("#riva-tag img").addClass("unselect");
+    $("#riva-tag span").addClass("unselect");
+    $("#coro-tag img").removeClass("unselect");
+    $("#coro-tag span").removeClass("unselect");
+    $("#sere-tag img").addClass("unselect");
+    $("#sere-tag span").addClass("unselect");
+    $("#shuva-tag img").addClass("unselect");
+    $("#shuva-tag span").addClass("unselect");
+    $("#yugu-tag img").addClass("unselect");
+    $("#yugu-tag span").addClass("unselect");
+    $("#tia-tag img").addClass("unselect");
+    $("#tia-tag span").addClass("unselect");
+
+
+});
+$("#mizu_tab").on("click", function () {
+    $("#baha_body").addClass("hide");
+    $("#gra_body").addClass("hide");
+
+    $("#rafa_body").addClass("hide");
+    $("#uri_body").addClass("hide");
+    $("#gabu_body").removeClass("hide");
+    $("#mika_body").addClass("hide");
+
+    $("#riva_body").removeClass("hide");
+    $("#coro_body").addClass("hide");
+    $("#sere_body").addClass("hide");
+    $("#shuva_body").addClass("hide");
+    $("#yugu_body").addClass("hide");
+    $("#tia_body").addClass("hide");
+
+    $("#garu_body").addClass("hide");
+    $("#ate_body").addClass("hide");
+    $("#baa_body").addClass("hide");
+    $("#gura_body").removeClass("hide");
+
+    $("#hura_body").addClass("hide");
+    $("#makyu_body").removeClass("hide");
+    $("#medu_body").addClass("hide");
+    $("#nata_body").addClass("hide");
+
+    $("#grand-tag img").addClass("unselect");
+    $("#grand-tag span").addClass("unselect");
+    $("#baha-tag img").addClass("unselect");
+    $("#baha-tag span").addClass("unselect");
+    $("#riva-tag img").removeClass("unselect");
+    $("#riva-tag span").removeClass("unselect");
+    $("#coro-tag img").addClass("unselect");
+    $("#coro-tag span").addClass("unselect");
+    $("#sere-tag img").addClass("unselect");
+    $("#sere-tag span").addClass("unselect");
+    $("#shuva-tag img").addClass("unselect");
+    $("#shuva-tag span").addClass("unselect");
+    $("#yugu-tag img").addClass("unselect");
+    $("#yugu-tag span").addClass("unselect");
+    $("#tia-tag img").addClass("unselect");
+    $("#tia-tag span").addClass("unselect");
+
+
+});
+$("#tuti_tab").on("click", function () {
+    $("#baha_body").addClass("hide");
+    $("#gra_body").addClass("hide");
+
+    $("#rafa_body").addClass("hide");
+    $("#uri_body").removeClass("hide");
+    $("#gabu_body").addClass("hide");
+    $("#mika_body").addClass("hide");
+
+    $("#riva_body").addClass("hide");
+    $("#coro_body").addClass("hide");
+    $("#sere_body").addClass("hide");
+    $("#shuva_body").addClass("hide");
+    $("#yugu_body").removeClass("hide");
+    $("#tia_body").addClass("hide");
+
+    $("#garu_body").addClass("hide");
+    $("#ate_body").addClass("hide");
+    $("#baa_body").removeClass("hide");
+    $("#gura_body").addClass("hide");
+
+    $("#hura_body").addClass("hide");
+    $("#makyu_body").addClass("hide");
+    $("#medu_body").removeClass("hide");
+    $("#nata_body").addClass("hide");
+
+    $("#grand-tag img").addClass("unselect");
+    $("#grand-tag span").addClass("unselect");
+    $("#baha-tag img").addClass("unselect");
+    $("#baha-tag span").addClass("unselect");
+    $("#riva-tag img").addClass("unselect");
+    $("#riva-tag span").addClass("unselect");
+    $("#coro-tag img").addClass("unselect");
+    $("#coro-tag span").addClass("unselect");
+    $("#sere-tag img").addClass("unselect");
+    $("#sere-tag span").addClass("unselect");
+    $("#shuva-tag img").addClass("unselect");
+    $("#shuva-tag span").addClass("unselect");
+    $("#yugu-tag img").removeClass("unselect");
+    $("#yugu-tag span").removeClass("unselect");
+    $("#tia-tag img").addClass("unselect");
+    $("#tia-tag span").addClass("unselect");
+
+
+});
+
+
 // $("#grand-tag").on("click", function () {
 //     if($("#grand-tag img").hasClass('unselect')){
 //         $("#grand-tag img").removeClass('unselect');
