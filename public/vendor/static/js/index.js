@@ -112,6 +112,36 @@ ws.onmessage = function (evt) {
             $('.nata-time').text(getDate());
             $('#nata_tbl tbody > tr:last').after(rec);
             break;
+        case "Lv100 ティアマト・マグナ＝エア":
+            var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.h-tia-time').text(getDate());
+            $('#h_tia_tbl tbody > tr:last').after(rec);
+            break;
+        case "Lv100 コロッサス・マグナ":
+            var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.h-coro-time').text(getDate());
+            $('#h_coro_tbl tbody > tr:last').after(rec);
+            break;
+        case "Lv100 リヴァイアサン・マグナ":
+            var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.h-riva-time').text(getDate());
+            $('#h_riva_tbl tbody > tr:last').after(rec);
+            break;
+        case "Lv100 ユグドラシル・マグナ":
+            var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.h-yugu-time').text(getDate());
+            $('#h_yugu_tbl tbody > tr:last').after(rec);
+            break;
+        case "Lv100 シュヴァリエ・マグナ":
+            var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.h-shuva-time').text(getDate());
+            $('#h_shuva_tbl tbody > tr:last').after(rec);
+            break;
+        case "Lv100 セレスト・マグナ":
+            var rec = '<tr class="selectable"><td>' + id + '</td></tr>>';
+            $('.h-sere-time').text(getDate());
+            $('#h_sere_tbl tbody > tr:last').after(rec);
+            break;
     }
 };
 /* テーブルデータがクリックされたら、クリップボードにコピーする */
@@ -146,6 +176,13 @@ $("#lv100_tab").on("click", function () {
     $("#makyu_body").addClass("hide");
     $("#medu_body").addClass("hide");
     $("#nata_body").addClass("hide");
+
+    $("#h_riva_body").addClass("hide");
+    $("#h_coro_body").addClass("hide");
+    $("#h_sere_body").addClass("hide");
+    $("#h_shuva_body").addClass("hide");
+    $("#h_yugu_body").addClass("hide");
+    $("#h_tia_body").addClass("hide");
 
     $("#grand-tag img").removeClass("unselect");
     $("#grand-tag span").removeClass("unselect");
@@ -190,6 +227,13 @@ $("#magna_tab").on("click", function () {
     $("#medu_body").addClass("hide");
     $("#nata_body").addClass("hide");
 
+    $("#h_riva_body").addClass("hide");
+    $("#h_coro_body").addClass("hide");
+    $("#h_sere_body").addClass("hide");
+    $("#h_shuva_body").addClass("hide");
+    $("#h_yugu_body").addClass("hide");
+    $("#h_tia_body").addClass("hide");
+
     $("#grand-tag img").addClass("unselect");
     $("#grand-tag span").addClass("unselect");
     $("#baha-tag img").addClass("unselect");
@@ -233,6 +277,13 @@ $("#all_tab").on("click", function () {
     $("#medu_body").addClass("hide");
     $("#nata_body").addClass("hide");
 
+    $("#h_riva_body").addClass("hide");
+    $("#h_coro_body").addClass("hide");
+    $("#h_sere_body").addClass("hide");
+    $("#h_shuva_body").addClass("hide");
+    $("#h_yugu_body").addClass("hide");
+    $("#h_tia_body").addClass("hide");
+
     $("#grand-tag img").removeClass("unselect");
     $("#grand-tag span").removeClass("unselect");
     $("#baha-tag img").removeClass("unselect");
@@ -275,6 +326,13 @@ $("#ang_tab").on("click", function () {
     $("#makyu_body").addClass("hide");
     $("#medu_body").addClass("hide");
     $("#nata_body").addClass("hide");
+
+    $("#h_riva_body").addClass("hide");
+    $("#h_coro_body").addClass("hide");
+    $("#h_sere_body").addClass("hide");
+    $("#h_shuva_body").addClass("hide");
+    $("#h_yugu_body").addClass("hide");
+    $("#h_tia_body").addClass("hide");
 
     $("#grand-tag img").addClass("unselect");
     $("#grand-tag span").addClass("unselect");
@@ -322,6 +380,13 @@ $("#new_tab").on("click", function () {
     $("#medu_body").addClass("hide");
     $("#nata_body").addClass("hide");
 
+    $("#h_riva_body").addClass("hide");
+    $("#h_coro_body").addClass("hide");
+    $("#h_sere_body").addClass("hide");
+    $("#h_shuva_body").addClass("hide");
+    $("#h_yugu_body").addClass("hide");
+    $("#h_tia_body").addClass("hide");
+
     $("#grand-tag img").addClass("unselect");
     $("#grand-tag span").addClass("unselect");
     $("#baha-tag img").addClass("unselect");
@@ -366,6 +431,13 @@ $("#old_tab").on("click", function () {
     $("#makyu_body").removeClass("hide");
     $("#medu_body").removeClass("hide");
     $("#nata_body").removeClass("hide");
+
+    $("#h_riva_body").addClass("hide");
+    $("#h_coro_body").addClass("hide");
+    $("#h_sere_body").addClass("hide");
+    $("#h_shuva_body").addClass("hide");
+    $("#h_yugu_body").addClass("hide");
+    $("#h_tia_body").addClass("hide");
 
     $("#grand-tag img").addClass("unselect");
     $("#grand-tag span").addClass("unselect");
@@ -457,6 +529,13 @@ $("#kaze_tab").on("click", function () {
     $("#medu_body").addClass("hide");
     $("#nata_body").removeClass("hide");
 
+    $("#h_riva_body").addClass("hide");
+    $("#h_coro_body").addClass("hide");
+    $("#h_sere_body").addClass("hide");
+    $("#h_shuva_body").addClass("hide");
+    $("#h_yugu_body").addClass("hide");
+    $("#h_tia_body").addClass("hide");
+
     $("#grand-tag img").addClass("unselect");
     $("#grand-tag span").addClass("unselect");
     $("#baha-tag img").addClass("unselect");
@@ -501,6 +580,13 @@ $("#hi_tab").on("click", function () {
     $("#makyu_body").addClass("hide");
     $("#medu_body").addClass("hide");
     $("#nata_body").addClass("hide");
+
+    $("#h_riva_body").addClass("hide");
+    $("#h_coro_body").addClass("hide");
+    $("#h_sere_body").addClass("hide");
+    $("#h_shuva_body").addClass("hide");
+    $("#h_yugu_body").addClass("hide");
+    $("#h_tia_body").addClass("hide");
 
     $("#grand-tag img").addClass("unselect");
     $("#grand-tag span").addClass("unselect");
@@ -547,6 +633,13 @@ $("#mizu_tab").on("click", function () {
     $("#medu_body").addClass("hide");
     $("#nata_body").addClass("hide");
 
+    $("#h_riva_body").addClass("hide");
+    $("#h_coro_body").addClass("hide");
+    $("#h_sere_body").addClass("hide");
+    $("#h_shuva_body").addClass("hide");
+    $("#h_yugu_body").addClass("hide");
+    $("#h_tia_body").addClass("hide");
+
     $("#grand-tag img").addClass("unselect");
     $("#grand-tag span").addClass("unselect");
     $("#baha-tag img").addClass("unselect");
@@ -592,6 +685,13 @@ $("#tuti_tab").on("click", function () {
     $("#medu_body").removeClass("hide");
     $("#nata_body").addClass("hide");
 
+    $("#h_riva_body").addClass("hide");
+    $("#h_coro_body").addClass("hide");
+    $("#h_sere_body").addClass("hide");
+    $("#h_shuva_body").addClass("hide");
+    $("#h_yugu_body").addClass("hide");
+    $("#h_tia_body").addClass("hide");
+
     $("#grand-tag img").addClass("unselect");
     $("#grand-tag span").addClass("unselect");
     $("#baha-tag img").addClass("unselect");
@@ -606,6 +706,58 @@ $("#tuti_tab").on("click", function () {
     $("#shuva-tag span").addClass("unselect");
     $("#yugu-tag img").removeClass("unselect");
     $("#yugu-tag span").removeClass("unselect");
+    $("#tia-tag img").addClass("unselect");
+    $("#tia-tag span").addClass("unselect");
+
+
+});
+$("#h_tab").on("click", function () {
+    $("#baha_body").addClass("hide");
+    $("#gra_body").addClass("hide");
+
+    $("#rafa_body").addClass("hide");
+    $("#uri_body").addClass("hide");
+    $("#gabu_body").addClass("hide");
+    $("#mika_body").addClass("hide");
+
+    $("#riva_body").addClass("hide");
+    $("#coro_body").addClass("hide");
+    $("#sere_body").addClass("hide");
+    $("#shuva_body").addClass("hide");
+    $("#yugu_body").addClass("hide");
+    $("#tia_body").addClass("hide");
+
+    $("#garu_body").addClass("hide");
+    $("#ate_body").addClass("hide");
+    $("#baa_body").addClass("hide");
+    $("#gura_body").addClass("hide");
+
+    $("#hura_body").addClass("hide");
+    $("#makyu_body").addClass("hide");
+    $("#medu_body").addClass("hide");
+    $("#nata_body").addClass("hide");
+
+    $("#h_riva_body").removeClass("hide");
+    $("#h_coro_body").removeClass("hide");
+    $("#h_sere_body").removeClass("hide");
+    $("#h_shuva_body").removeClass("hide");
+    $("#h_yugu_body").removeClass("hide");
+    $("#h_tia_body").removeClass("hide");
+
+    $("#grand-tag img").addClass("unselect");
+    $("#grand-tag span").addClass("unselect");
+    $("#baha-tag img").addClass("unselect");
+    $("#baha-tag span").addClass("unselect");
+    $("#riva-tag img").addClass("unselect");
+    $("#riva-tag span").addClass("unselect");
+    $("#coro-tag img").addClass("unselect");
+    $("#coro-tag span").addClass("unselect");
+    $("#sere-tag img").addClass("unselect");
+    $("#sere-tag span").addClass("unselect");
+    $("#shuva-tag img").addClass("unselect");
+    $("#shuva-tag span").addClass("unselect");
+    $("#yugu-tag img").addClass("unselect");
+    $("#yugu-tag span").addClass("unselect");
     $("#tia-tag img").addClass("unselect");
     $("#tia-tag span").addClass("unselect");
 
