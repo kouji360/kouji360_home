@@ -895,6 +895,12 @@ function allTableClearCaseOfNotHide(){
 
 };
 
+$(document).keydown(function(event){
+    if(event.keyCode === 113 ) {
+        allTableClearCaseOfNotHide();
+    }
+});
+
 function getDate(){
     var now = new Date();
     var h = now.getHours();
