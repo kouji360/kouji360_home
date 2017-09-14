@@ -837,6 +837,64 @@ $(".chara-tag").on("click", function () {
     }
     // $("#grand-tag img").css("filter","grayscale(1)");
 });
+$(".nav-tab").on("click", function () {
+    allTableClearCaseOfNotHide();
+});
+function clearTableByBodyNameAndTblName(bodyName,tblName){
+        $(tblName+' tr').remove();
+        $(tblName).prepend('<tr></tr>');
+        $(bodyName+' > .tag-label-container > .time').text('');
+};
+function clearTableByBodyNameAndTblNameCaseOfNotHide(bodyName,tblName){
+    if(!$(bodyName).hasClass('hide')){
+        $(tblName+' tr').remove();
+        $(tblName).prepend('<tr></tr>');
+        $(bodyName+' > .tag-label-container > .time').text('');
+    }
+};
+//いま表示されてるテーブルを全部クリアする
+function allTableClearCaseOfNotHide(){
+    //マグナ
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#shuva_body','#shuva_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#sere_body','#sere_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#coro_body','#coro_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#riva_body','#riva_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#yugu_body','#yugu_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#tia_body','#tia_tbl');
+
+    //100
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#baha_body','#baha_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#grande_body','#grande_tbl');
+
+    //天使
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#mika_body','#mika_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#uri_body','#uri_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#gabu_body','#gabu_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#rafa_body','#rafa_tbl');
+
+    //旧石
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#hura_body','#hura_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#makyu_body','#makyu_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#medu_body','#medu_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#nata_body','#nata_tbl');
+
+    //新石
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#garu_body','#garu_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#ate_body','#ate_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#gura_body','#gura_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#baa_body','#baa_tbl');
+
+    //HL
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#h_shuva_body','#h_shuva_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#h_sere_body','#h_sere_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#h_coro_body','#h_coro_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#h_riva_body','#h_riva_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#h_yugu_body','#h_yugu_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#h_tia_body','#h_tia_tbl');
+
+
+};
+
 function getDate(){
     var now = new Date();
     var h = now.getHours();
