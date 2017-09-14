@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fecd72d-d544-4b16-adf4-b3e9106d708f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/static/js/index.js" afterPath="$PROJECT_DIR$/vendor/static/js/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +21,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="89" column="36" lean-forward="false" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="36" />
+            <state relative-caret-position="224">
+              <caret line="92" column="41" lean-forward="true" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -58,8 +59,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/static/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="866" column="65" lean-forward="false" selection-start-line="866" selection-start-column="65" selection-end-line="866" selection-end-column="65" />
+            <state relative-caret-position="1927">
+              <caret line="315" column="0" lean-forward="true" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -88,6 +89,7 @@
       <find>ページ更新</find>
       <find>h_shuva_body</find>
       <find>gra_body</find>
+      <find>allTableClearCaseOfNotHide</find>
     </findStrings>
     <replaceStrings>
       <replace>add</replace>
@@ -948,12 +950,12 @@
       <workItem from="1504705734746" duration="2448000" />
       <workItem from="1504864023043" duration="3697000" />
       <workItem from="1504940495493" duration="5180000" />
-      <workItem from="1505364662352" duration="6168000" />
+      <workItem from="1505364662352" duration="6624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50373000" />
+    <option name="totallyTimeSpent" value="50829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1232,8 +1234,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="89" column="36" lean-forward="false" selection-start-line="89" selection-start-column="28" selection-end-line="89" selection-end-column="36" />
+        <state relative-caret-position="224">
+          <caret line="92" column="41" lean-forward="true" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1248,8 +1250,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/static/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="866" column="65" lean-forward="false" selection-start-line="866" selection-start-column="65" selection-end-line="866" selection-end-column="65" />
+        <state relative-caret-position="1927">
+          <caret line="315" column="0" lean-forward="true" selection-start-line="315" selection-start-column="0" selection-end-line="315" selection-end-column="0" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>

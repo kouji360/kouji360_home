@@ -200,6 +200,10 @@ $("#lv100_tab").on("click", function () {
     $("#yugu-tag span").addClass("unselect");
     $("#tia-tag img").addClass("unselect");
     $("#tia-tag span").addClass("unselect");
+
+    if ($(this).hasClass('active')){
+        allTableClearCaseOfNotHide();
+    }
 });
 $("#magna_tab").on("click", function () {
     $("#baha_body").addClass("hide");
@@ -250,6 +254,11 @@ $("#magna_tab").on("click", function () {
     $("#yugu-tag span").removeClass("unselect");
     $("#tia-tag img").removeClass("unselect");
     $("#tia-tag span").removeClass("unselect");
+
+    if ($(this).hasClass('active')){
+        allTableClearCaseOfNotHide();
+    }
+
 });
 $("#all_tab").on("click", function () {
     $("#baha_body").removeClass("hide");
@@ -300,6 +309,11 @@ $("#all_tab").on("click", function () {
     $("#yugu-tag span").removeClass("unselect");
     $("#tia-tag img").removeClass("unselect");
     $("#tia-tag span").removeClass("unselect");
+
+    if ($(this).hasClass('active')){
+        allTableClearCaseOfNotHide();
+    }
+
 });
 $("#ang_tab").on("click", function () {
     $("#baha_body").addClass("hide");
@@ -350,6 +364,10 @@ $("#ang_tab").on("click", function () {
     $("#yugu-tag span").addClass("unselect");
     $("#tia-tag img").addClass("unselect");
     $("#tia-tag span").addClass("unselect");
+
+    if ($(this).hasClass('active')){
+        allTableClearCaseOfNotHide();
+    }
 
 
 });
@@ -404,6 +422,10 @@ $("#new_tab").on("click", function () {
     $("#tia-tag img").addClass("unselect");
     $("#tia-tag span").addClass("unselect");
 
+    if ($(this).hasClass('active')){
+        allTableClearCaseOfNotHide();
+    }
+
 
 });
 $("#old_tab").on("click", function () {
@@ -455,6 +477,10 @@ $("#old_tab").on("click", function () {
     $("#yugu-tag span").addClass("unselect");
     $("#tia-tag img").addClass("unselect");
     $("#tia-tag span").addClass("unselect");
+
+    if ($(this).hasClass('active')){
+        allTableClearCaseOfNotHide();
+    }
 
 
 });
@@ -553,6 +579,10 @@ $("#kaze_tab").on("click", function () {
     $("#tia-tag img").removeClass("unselect");
     $("#tia-tag span").removeClass("unselect");
 
+    if ($(this).hasClass('active')){
+        allTableClearCaseOfNotHide();
+    }
+
 
 });
 $("#hi_tab").on("click", function () {
@@ -604,6 +634,10 @@ $("#hi_tab").on("click", function () {
     $("#yugu-tag span").addClass("unselect");
     $("#tia-tag img").addClass("unselect");
     $("#tia-tag span").addClass("unselect");
+
+    if ($(this).hasClass('active')){
+        allTableClearCaseOfNotHide();
+    }
 
 
 });
@@ -657,6 +691,10 @@ $("#mizu_tab").on("click", function () {
     $("#tia-tag img").addClass("unselect");
     $("#tia-tag span").addClass("unselect");
 
+    if ($(this).hasClass('active')){
+        allTableClearCaseOfNotHide();
+    }
+
 
 });
 $("#tuti_tab").on("click", function () {
@@ -708,6 +746,10 @@ $("#tuti_tab").on("click", function () {
     $("#yugu-tag span").removeClass("unselect");
     $("#tia-tag img").addClass("unselect");
     $("#tia-tag span").addClass("unselect");
+
+    if ($(this).hasClass('active')){
+        allTableClearCaseOfNotHide();
+    }
 
 
 });
@@ -761,6 +803,9 @@ $("#h_tab").on("click", function () {
     $("#tia-tag img").addClass("unselect");
     $("#tia-tag span").addClass("unselect");
 
+    if ($(this).hasClass('active')){
+        allTableClearCaseOfNotHide();
+    }
 
 });
 
@@ -837,9 +882,9 @@ $(".chara-tag").on("click", function () {
     }
     // $("#grand-tag img").css("filter","grayscale(1)");
 });
-$(".nav-tab").on("click", function () {
-    allTableClearCaseOfNotHide();
-});
+// $(".nav-tab").on("click", function () {
+//     allTableClearCaseOfNotHide();
+// });
 function clearTableByBodyNameAndTblName(bodyName,tblName){
         $(tblName+' tr').remove();
         $(tblName).prepend('<tr></tr>');
