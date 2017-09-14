@@ -864,7 +864,7 @@ function allTableClearCaseOfNotHide(){
 
     //100
     clearTableByBodyNameAndTblNameCaseOfNotHide('#baha_body','#baha_tbl');
-    clearTableByBodyNameAndTblNameCaseOfNotHide('#grande_body','#grande_tbl');
+    clearTableByBodyNameAndTblNameCaseOfNotHide('#gra_body','#gra_tbl');
 
     //天使
     clearTableByBodyNameAndTblNameCaseOfNotHide('#mika_body','#mika_tbl');
